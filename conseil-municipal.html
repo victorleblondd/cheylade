@@ -1,0 +1,76 @@
+---
+title: "Le conseil municipal"
+permalink: /conseil-municipal/
+chapo: "Onze élus au service de la commune, élus le 15 mars 2026 pour six ans : le maire, ses trois adjoints et sept conseillers municipaux."
+description: "Le conseil municipal de Cheylade : le maire Christophe Raynal, les trois adjoints et les conseillers municipaux élus en mars 2026, les délégués de la commune et les commissions municipales."
+---
+{%- assign e = site.data.elus -%}
+{%- assign m = site.data.mairie -%}
+<section class="bloc" aria-labelledby="titre-maire">
+  <h2 id="titre-maire" class="titre-decore">Le maire et les adjoints</h2>
+  <p class="bloc-intro">Pour toute question, contactez l'élu chargé du sujet par l'intermédiaire de la mairie, au <a href="tel:{{ m.telephone_lien }}">{{ m.telephone }}</a>.</p>
+  <div class="grille-4">
+    <div class="panneau carte-elu">
+      <p class="fonction">{{ e.maire.fonction }}</p>
+      <h3 class="nom">{{ e.maire.nom }}</h3>
+    </div>
+    {%- for a in e.adjoints %}
+    <div class="panneau carte-elu">
+      <p class="fonction">{{ a.fonction | replace: "1re", "1<sup>re</sup>" | replace: "2e", "2<sup>e</sup>" | replace: "3e", "3<sup>e</sup>" }}</p>
+      <h3 class="nom">{{ a.nom }}</h3>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<div class="grille-asymetrique bloc">
+  <section class="panneau" aria-labelledby="titre-conseillers">
+    <h2 id="titre-conseillers" class="h3-like">Les conseillers municipaux</h2>
+    <ul class="liste-noms">
+      {%- for c in e.conseillers %}
+      <li>{{ c }}</li>
+      {%- endfor %}
+    </ul>
+  </section>
+  <div class="pile">
+    <section class="panneau panneau--info" aria-labelledby="titre-seances">
+      <h2 id="titre-seances" class="h3-like">Les séances du conseil</h2>
+      <p>Les séances du conseil municipal sont publiques. Les décisions du conseil sont publiées à l'affichage légal.</p>
+      <p><a class="lien-fleche" href="{{ '/affichage-legal/' | relative_url }}">Affichage légal{% include icone.html nom="fleche" %}</a></p>
+    </section>
+    <section class="panneau" aria-labelledby="titre-intercommunalite">
+      <h2 id="titre-intercommunalite" class="h3-like">Le Pays Gentiane</h2>
+      <p>Cheylade fait partie de la communauté de communes du Pays Gentiane, qui réunit dix-sept communes autour de Riom-ès-Montagnes, son siège.</p>
+    </section>
+  </div>
+</div>
+
+<section class="bloc" id="commissions" aria-labelledby="titre-commissions">
+  <h2 id="titre-commissions" class="titre-decore">Les commissions municipales</h2>
+  <div class="grille-3 liste-commissions">
+    {%- for c in e.commissions %}
+    <div class="panneau">
+      <h3>{{ c.nom }}</h3>
+      <p>{{ c.membres }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="bloc" id="delegues" aria-labelledby="titre-delegues">
+  <h2 id="titre-delegues" class="titre-decore">Les délégués de la commune</h2>
+  <p class="bloc-intro">Les élus qui représentent Cheylade auprès des organismes dont la commune est membre.</p>
+  <div class="tableau-defilant">
+    <table class="tableau">
+      <caption class="visuellement-cache">Les délégués de la commune</caption>
+      <thead>
+        <tr><th scope="col">Organisme</th><th scope="col">Délégués</th></tr>
+      </thead>
+      <tbody>
+        {%- for d in e.delegues %}
+        <tr><th scope="row">{{ d.organisme }}</th><td>{{ d.noms }}</td></tr>
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
