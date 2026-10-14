@@ -1,0 +1,65 @@
+# Conseil municipal élu le 15 mars 2026 (onze conseillers).
+# Source : Répertoire national des élus (ministère de l'Intérieur), version du 11 août 2026.
+# Délégations et commissions : site actuel de la commune (www.cheylade.fr), consulté le 14 octobre 2026.
+
+election: "15 mars 2026"
+
+maire:
+  nom: "Christophe Raynal"
+  fonction: "Maire"
+
+adjoints:
+  - nom: "Aurélie Douhet"
+    fonction: "1re adjointe"
+  - nom: "Alain Carries"
+    fonction: "2e adjoint"
+  - nom: "Maryse Amadieu"
+    fonction: "3e adjointe"
+
+# Ordre alphabétique
+conseillers:
+  - "Mélanie Chalvignac"
+  - "Claude Lavergne"
+  - "Anaïs Leseur"
+  - "Pierre Liadouze"
+  - "Thierry Montmalier"
+  - "Audrey Réthoré"
+  - "Jean-Yves Rodde"
+
+# Les délégués de la commune auprès des organismes extérieurs
+delegues:
+  - organisme: "Communauté de communes du Pays Gentiane"
+    noms: "Christophe Raynal, Aurélie Douhet"
+  - organisme: "Syndicat mixte du Puy Mary"
+    noms: "Christophe Raynal, Mélanie Chalvignac"
+  - organisme: "Syndicat départemental d'énergies du Cantal"
+    noms: "Christophe Raynal, Thierry Montmalier, Pierre Liadouze"
+  - organisme: "Syndicat de la zone nordique du Haut-Cantal"
+    noms: "Mélanie Chalvignac, Maryse Amadieu"
+  - organisme: "Parc naturel régional des Volcans d'Auvergne"
+    noms: "Audrey Réthoré, Anaïs Leseur"
+  - organisme: "Syndicat de cylindrage"
+    noms: "Pierre Liadouze, Claude Lavergne, Jean-Yves Rodde"
+  - organisme: "Centre communal d'action sociale (CCAS)"
+    noms: "Maryse Amadieu, Christophe Raynal, Aurélie Douhet"
+  - organisme: "Comité national d'action sociale (CNAS)"
+    noms: "Maryse Amadieu"
+
+# Les commissions municipales
+commissions:
+  - nom: "Travaux"
+    membres: "Alain Carries, Christophe Raynal"
+  - nom: "Agriculture"
+    membres: "Thierry Montmalier, Jean-Yves Rodde, Claude Lavergne, Christophe Raynal"
+  - nom: "Appel d'offres"
+    membres: "Alain Carries, Christophe Raynal"
+  - nom: "Affaires scolaires"
+    membres: "Aurélie Douhet, Audrey Réthoré, Christophe Raynal"
+  - nom: "Tourisme et patrimoine"
+    membres: "Maryse Amadieu, Mélanie Chalvignac, Christophe Raynal"
+  - nom: "Communication et web"
+    membres: "Anaïs Leseur, Christophe Raynal"
+  - nom: "Festivités et animations"
+    membres: "Christophe Raynal"
+  - nom: "Vie associative et gestion des salles"
+    membres: "Maryse Amadieu, Christophe Raynal"

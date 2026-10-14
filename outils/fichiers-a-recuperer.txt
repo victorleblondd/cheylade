@@ -1,0 +1,21 @@
+# Fichiers que GitHub va chercher automatiquement et ajouter au site
+# (programme : outils/recuperer_fichiers.py, lancé par .github/workflows/recuperer-fichiers.yml).
+#
+# Une ligne par fichier :  adresse-source   chemin-dans-le-site   [largeur maximale, pour les photos]
+# - Si le chemin se termine par .pdf et que la source est une image (affiche), elle est convertie en PDF A4.
+#   Plusieurs images séparées par « | » (sans espace) donnent un PDF de plusieurs pages.
+# - Un fichier déjà présent dans le site n'est jamais téléchargé une deuxième fois.
+
+# Blason du Cantal (repris du site de Saint-Bonnet-de-Condat)
+https://raw.githubusercontent.com/victorleblondd/saint-bonnet-de-condat/main/assets/images/blason-cantal.png  assets/images/blason-cantal.png
+
+# Photo de l'accueil : l'église Saint-Léger (Elke Wetzig, Wikimedia Commons, CC BY-SA 4.0)
+https://upload.wikimedia.org/wikipedia/commons/c/c4/Cheylade%2C_%C3%89glise_Saint-L%C3%A9ger.jpg  assets/images/eglise-saint-leger.jpg  1600
+
+# Infos & Alertes : affiches et photos publiées avec les avis de la mairie
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/7664201726ac7ee7a4f2775.10046644-1791487610.jpg/89c3d2d591526b61777ee041b91ab27c|https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/8419113966ac7ee82573db9.70849445-1791487618.jpg/008c101895948d7cf95dc7e096e83f91|https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/13179903706ac7ee8c154e55.73407874-1791487628.jpg/8339a05ba398d29c47bdd5b5a69e282b  documents/infos-alertes/2026-10-08-abords-des-containers.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/2460515146ac3cc5484ba29.24407628-1791216724.png/36e2aae839effd55e6a4abf344097cf8  documents/infos-alertes/2026-10-05-releve-des-compteurs-d-eau.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/18590739366a89dba6b06c49.50430163-1787419558.png/f1441f9c48b01b8cfedc0d782477f5f4  documents/infos-alertes/2026-08-22-chenilles-processionnaires.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/16987830026a68507493e145.06093632-1785221236.jpg/3728bf70d717625e3449fa6ec5b4984b  documents/infos-alertes/2026-07-28-fin-des-paiements-par-cheque.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/1430367716a40cad14f5c66.55618157-1782631121.jpg/5321d25b875811ff3f8eac5b38ad6b40  documents/infos-alertes/2026-06-28-baignade-interdite-au-lac-des-cascades.pdf
+https://panneau-pocket.s3.gra.perf.cloud.ovh.net/cache/sign_image/11939942626a3fc888e2bf50.18381448-1782565000.jpg/d5d42c72b49f43efee60ae39117fd4d3  documents/infos-alertes/2026-06-27-stationnement-interdit-devant-l-eglise.pdf

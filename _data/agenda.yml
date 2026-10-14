@@ -1,0 +1,69 @@
+# =====================================================================
+#  AGENDA : LES PROCHAINS RENDEZ-VOUS
+#  Dans l'ordre chronologique (le plus proche en haut).
+#  Un rendez-vous disparaît tout seul du site le lendemain de son dernier jour.
+#
+#  - date: "AAAA-MM-JJ"          premier jour
+#    fin: "AAAA-MM-JJ"           facultatif : dernier jour (si plusieurs jours)
+#    quand: "Samedi 17 octobre"  la date, telle qu'elle s'affiche
+#    heure: "14 h"               facultatif
+#    titre: "Nom du rendez-vous"
+#    detail: "Une phrase."       facultatif
+#    lieu: "Salle des fêtes"     facultatif
+#    lien: "/vie-locale/"        facultatif : page du site qui en parle
+#
+#  Source : journal communal Cheylade & vous n°2 (octobre 2026).
+# =====================================================================
+
+- date: "2026-10-17"
+  fin: "2026-10-18"
+  quand: "Samedi 17 et dimanche 18 octobre"
+  titre: "Festival d'automne"
+  detail: "Organisé par l'association Valrhue."
+
+- date: "2026-10-18"
+  quand: "Dimanche 18 octobre"
+  titre: "Bal du club des Cascades"
+  detail: "Avec Patrick Rivière."
+
+- date: "2026-10-24"
+  fin: "2026-10-27"
+  quand: "Du samedi 24 au mardi 27 octobre"
+  titre: "Voyage en pays catalan"
+  detail: "Quatre jours de voyage organisés par le club des Cascades."
+
+- date: "2026-11-02"
+  quand: "Lundi 2 novembre"
+  heure: "à partir de 14 h"
+  titre: "Plantation participative de la place Saint-Léger"
+  detail: "Petits et grands sont invités à végétaliser la place de l'église."
+  lieu: "Place Saint-Léger"
+  lien: "/bulletin-municipal/une-place-saint-leger-plus-verte/"
+
+- date: "2026-11-11"
+  quand: "Mercredi 11 novembre"
+  titre: "Commémoration du 11 Novembre"
+  lieu: "Monument aux morts"
+
+- date: "2026-11-19"
+  quand: "Jeudi 19 novembre"
+  titre: "Fête du beaujolais nouveau"
+
+- date: "2026-11-29"
+  quand: "Dimanche 29 novembre"
+  titre: "Marché de Noël"
+
+- date: "2026-12-17"
+  quand: "Jeudi 17 décembre"
+  titre: "Goûter de Noël du club des Cascades"
+
+- date: "2027-05-16"
+  quand: "Dimanche 16 mai 2027"
+  titre: "Foire aux cloches et aux sonnailles"
+  detail: "Organisée par l'association Valrhue."
+  lien: "/decouvrir/#traditions"
+
+- date: "2027-07-11"
+  quand: "Dimanche 11 juillet 2027"
+  titre: "18e fête des Poulacres"
+  lien: "/decouvrir/#traditions"

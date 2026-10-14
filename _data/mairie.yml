@@ -1,0 +1,29 @@
+# Coordonnées et horaires de la mairie — utilisés dans l'en-tête, le pied de page et les pages.
+# Modifier ici une seule fois : tout le site se met à jour.
+# Sources : avis de la mairie « Infos pratiques » (26 juin 2026) et journal communal Cheylade & vous n°2 (octobre 2026).
+
+nom: "Mairie de Cheylade"
+adresse_ligne1: "2 rue de la Lettre"
+adresse_ligne2: "15400 Cheylade"
+telephone: "04 71 78 90 67"
+telephone_lien: "+33471789067"
+email: "mairie.cheylade@wanadoo.fr"
+facebook_url: "https://www.facebook.com/Commune-de-Cheylade-Cantal-100785238327684"
+
+# Horaires d'ouverture du secrétariat de mairie
+horaires_court: "du lundi au jeudi de 8 h à 14 h, le vendredi de 8 h à 12 h"
+horaires:
+  - jour: Lundi
+    matin: "8 h – 14 h"
+  - jour: Mardi
+    matin: "8 h – 14 h"
+  - jour: Mercredi
+    matin: "8 h – 14 h"
+  - jour: Jeudi
+    matin: "8 h – 14 h"
+  - jour: Vendredi
+    matin: "8 h – 12 h"
+  - jour: Samedi
+    ferme: true
+  - jour: Dimanche
+    ferme: true
