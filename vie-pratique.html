@@ -1,0 +1,157 @@
+---
+title: "Vie pratique"
+permalink: /vie-pratique/
+chapo: "Urgences et santé, eau et assainissement, sécheresse, déchets, école et transports : les informations utiles au quotidien."
+description: "Vie pratique à Cheylade : numéros d'urgence, soins infirmiers, médecins et pharmacie à Riom-ès-Montagnes, sapeurs-pompiers, eau potable et assainissement, restrictions liées à la sécheresse, déchets, chenilles processionnaires, école et navettes du puy Mary."
+---
+{%- assign m = site.data.mairie -%}
+{%- assign s = site.data.secheresse -%}
+<nav class="sommaire" aria-label="Sur cette page">
+  <ul>
+    <li><a href="#sante">Urgences et santé</a></li>
+    <li><a href="#eau">Eau et assainissement</a></li>
+    {%- if s.actif %}
+    <li><a href="#secheresse">Sécheresse</a></li>
+    {%- endif %}
+    <li><a href="#dechets">Déchets</a></li>
+    <li><a href="#chenilles">Chenilles processionnaires</a></li>
+    <li><a href="#ecole">École</a></li>
+    <li><a href="#transports">Transports</a></li>
+  </ul>
+</nav>
+
+<section class="bloc" id="sante" aria-labelledby="titre-sante">
+  <h2 id="titre-sante" class="titre-decore">Urgences et santé</h2>
+  <ul class="urgences" aria-label="Numéros d'urgence">
+    <li><a href="tel:112"><span class="urgence-numero">112</span><span>Appel d'urgence européen</span></a></li>
+    <li><a href="tel:15"><span class="urgence-numero">15</span><span>SAMU</span></a></li>
+    <li><a href="tel:18"><span class="urgence-numero">18</span><span>Pompiers</span></a></li>
+    <li><a href="tel:17"><span class="urgence-numero">17</span><span>Gendarmerie</span></a></li>
+  </ul>
+  <div class="grille-3">
+    <div class="panneau">
+      <h3>Soins infirmiers</h3>
+      <p>Un cabinet d'infirmières libérales intervient à Cheylade.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33471400367">04 71 40 03 67</a></p>
+      </div>
+    </div>
+    <div class="panneau">
+      <h3>Médecins</h3>
+      <p>Le cabinet médical le plus proche se trouve à Riom-ès-Montagnes, à 11 kilomètres.</p>
+    </div>
+    <div class="panneau">
+      <h3>Pharmacie Santé et Montagnes</h3>
+      <p>À Riom-ès-Montagnes, du lundi au samedi, de 9 h à 12 h et de 14 h à 19 h.</p>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="lieu" %}<span>1 place du Monument, 15400 Riom-ès-Montagnes</span></p>
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33471780086">04 71 78 00 86</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="panneau panneau--accent bloc-suite">
+    <h3>Le centre de secours Le Claux-Cheylade</h3>
+    <p>Les sapeurs-pompiers volontaires du centre de secours Le Claux-Cheylade interviennent sur la commune. En cas d'urgence, appelez le 18 ou le 112. Envie de vous engager ? Le centre accueille celles et ceux qui souhaitent devenir sapeur-pompier volontaire.</p>
+  </div>
+</section>
+
+<section class="bloc" id="eau" aria-labelledby="titre-eau">
+  <h2 id="titre-eau" class="titre-decore">Eau et assainissement</h2>
+  <div class="grille-asymetrique">
+    <div>
+      <p>L'eau potable est un service de la commune. Pour la mise à jour des relevés, rapportez en mairie votre carton de relève du compteur d'eau dès que possible.</p>
+      <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#2026-10-05-releve-des-compteurs-d-eau-rapportez-votre-carton-en-mairie">Relève des compteurs d'eau{% include icone.html nom="fleche" %}</a></p>
+      <h3>Les travaux en cours</h3>
+      <ul class="liste-coches">
+        <li><strong>Assainissement du bourg</strong> : environ 30 semaines de travaux, en trois secteurs, avec une fin de chantier prévue à l'hiver 2027. Les particuliers concernés par le raccordement de leur habitation sont contactés par la mairie.</li>
+        <li><strong>Conduite d'eau</strong> : remplacement de la conduite dans le village jusqu'à la Chevade, avec reprise des branchements chez les particuliers.</li>
+      </ul>
+      <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#2026-09-21-travaux-d-assainissement-environ-30-semaines-de-chantier">Le détail des travaux d'assainissement{% include icone.html nom="fleche" %}</a></p>
+    </div>
+    <div class="pile">
+      <div class="panneau panneau--info">
+        <h3>Une fuite, un problème d'eau ?</h3>
+        <p>Prévenez la mairie au <a href="tel:{{ m.telephone_lien }}"><strong>{{ m.telephone }}</strong></a>.</p>
+      </div>
+      <div class="panneau">
+        <h3>Payer votre facture d'eau</h3>
+        <p>Prélèvement automatique, paiement en ligne ou chez un buraliste partenaire : les chèques ne seront bientôt plus acceptés.</p>
+        <p><a class="lien-fleche" href="{{ '/mairie/' | relative_url }}#paiement">Les moyens de paiement{% include icone.html nom="fleche" %}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- if s.actif %}
+<section class="bloc" id="secheresse" aria-labelledby="titre-secheresse">
+  <h2 id="titre-secheresse" class="titre-decore">Sécheresse : restrictions des usages de l'eau</h2>
+  <div class="panneau panneau--alerte">
+    <p class="mise-en-avant">Cheylade est placée au {{ s.niveau_libelle }} sécheresse ({{ s.arrete }}).</p>
+    <p>Pour les particuliers, notamment :</p>
+    <ul>
+      <li>arrosage des pelouses, des massifs fleuris et des jardins d'agrément interdit ;</li>
+      <li>arrosage des potagers interdit de 8 h à 20 h ;</li>
+      <li>lavage des véhicules interdit, sauf impératif sanitaire ;</li>
+      <li>remplissage et vidange des piscines privées interdits ;</li>
+      <li>nettoyage des façades, toitures, trottoirs et voiries interdit, sauf impératif sanitaire ou de sécurité ;</li>
+      <li>fontaines interdites, sauf en circuit fermé.</li>
+    </ul>
+    <p>Les restrictions peuvent évoluer. Toutes les mesures qui s'appliquent à votre adresse sont détaillées sur <a href="https://vigieau.gouv.fr/" rel="noopener">vigieau.gouv.fr</a>, le site officiel de l'État. Plus d'informations sur <a href="https://www.cantal.gouv.fr" rel="noopener">cantal.gouv.fr</a>.</p>
+  </div>
+</section>
+{%- endif %}
+
+<section class="bloc" id="dechets" aria-labelledby="titre-dechets">
+  <h2 id="titre-dechets" class="titre-decore">Déchets</h2>
+  <div class="grille-2">
+    <div class="panneau">
+      <h3>Le point de collecte</h3>
+      <p>Les déchets se déposent <strong>dans les containers</strong>, jamais à côté. Quand ils sont pleins, revenez plus tard. Les encombrants n'ont pas leur place au point de collecte : ils vont à la déchetterie.</p>
+      <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#2026-10-08-point-de-collecte-les-abords-des-containers-ne-sont-pas-des-depotoirs">L'avis de la mairie{% include icone.html nom="fleche" %}</a></p>
+    </div>
+    <div class="panneau">
+      <h3>Déchetterie de Riom-ès-Montagnes</h3>
+      <p>Encombrants, végétaux, bois, électroménager, déchets dangereux : vos déchets ont leur place à la déchetterie. La plus proche se trouve à Riom-ès-Montagnes.</p>
+      <p>Horaires habituels : 8 h 30 – 12 h et 14 h – 17 h 30.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="chenilles" aria-labelledby="titre-chenilles">
+  <h2 id="titre-chenilles" class="titre-decore">Chenilles processionnaires</h2>
+  <div class="grille-asymetrique">
+    <div>
+      <p>Les poils des chenilles processionnaires peuvent provoquer des réactions importantes chez l'homme et chez les animaux. Ne touchez jamais les chenilles ni les nids, même au sol, et tenez vos chiens en laisse près des arbres infestés.</p>
+      <p><a class="lien-fleche" href="{{ '/infos-alertes/' | relative_url }}#2026-08-22-chenilles-processionnaires-les-bons-gestes">Les bons gestes{% include icone.html nom="fleche" %}</a></p>
+    </div>
+    <div class="panneau panneau--info">
+      <h3>Signaler des chenilles</h3>
+      <p>Signalez leur présence sur la plateforme dédiée : <a href="https://signalement-chenilles-processionnaires.atlasante.fr" rel="noopener">signalement-chenilles-<wbr>processionnaires.atlasante.fr</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="ecole" aria-labelledby="titre-ecole">
+  <h2 id="titre-ecole" class="titre-decore">École</h2>
+  <div class="grille-asymetrique">
+    <div>
+      <p>Les enfants sont scolarisés dans le regroupement pédagogique intercommunal (RPI) Cheylade – Le Claux : une classe de maternelle et CP, une classe du CE1 au CM2. L'école dispose d'une cantine.</p>
+      <p>L'association des parents d'élèves participe au financement des sorties : en 2026, vos dons lui ont permis de réunir 1 748 euros pour le voyage scolaire des enfants.</p>
+    </div>
+    <div class="panneau">
+      <h3>RPI Cheylade – Le Claux</h3>
+      <div class="coordonnees">
+        <p>{% include icone.html nom="telephone" %}<a href="tel:+33471400998">04 71 40 09 98</a></p>
+      </div>
+      <p class="note">Inscriptions : renseignez-vous auprès de la mairie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="transports" aria-labelledby="titre-transports">
+  <h2 id="titre-transports" class="titre-decore">Transports</h2>
+  <div class="panneau">
+    <h3>Les navettes du puy Mary</h3>
+    <p>En saison estivale, les navettes du puy Mary desservent Cheylade, sur la ligne Riom-ès-Montagnes – col de Serre. Horaires et réservations : renseignez-vous auprès de l'<a href="{{ '/decouvrir/' | relative_url }}#tourisme">office de tourisme</a>.</p>
+  </div>
+</section>
