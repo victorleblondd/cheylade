@@ -1,0 +1,42 @@
+---
+title: "Le bulletin municipal"
+permalink: /bulletin-municipal/
+chapo: "Cheylade & vous, le journal communal : retour sur la vie du village, les projets de la commune et les rendez-vous à venir. Le n°2 est paru en octobre 2026."
+description: "Cheylade & vous, le journal communal de Cheylade : l'édito et les articles du n°2 (octobre 2026), projets communaux, évènements de l'été et vie associative."
+---
+<div class="grille-asymetrique bloc">
+  <section class="bloc" aria-labelledby="titre-edito">
+    <p class="surtitre"><em>Cheylade &amp; vous</em> n°2 · octobre 2026</p>
+    <h2 id="titre-edito">L'édito</h2>
+    <p>Bienvenue dans le deuxième numéro de votre journal communal !</p>
+    <p>Le premier numéro a rencontré un très bel engouement : merci chaleureusement pour votre accueil, vos retours et votre intérêt pour ce nouveau rendez-vous. Cela nous encourage à poursuivre cette aventure et à faire de ce journal un espace de partage, d'information et de convivialité, à l'image de notre commune.</p>
+    <p>Ce journal est le vôtre ! N'hésitez pas à nous faire part de vos idées et de vos suggestions.</p>
+    <p>Bonne lecture à toutes et à tous, et merci de faire vivre avec nous ce petit journal communal !</p>
+  </section>
+  <aside class="pile">
+    <section class="panneau" aria-labelledby="titre-sommaire">
+      <h2 id="titre-sommaire" class="h3-like">Au sommaire du n°2</h2>
+      <ul class="liste-simple">
+        {%- for p in site.posts %}
+        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        {%- endfor %}
+        <li><a href="{{ '/vie-locale/' | relative_url }}#agenda">Les prochains rendez-vous</a></li>
+      </ul>
+    </section>
+    <section class="panneau panneau--info" aria-labelledby="titre-recevoir">
+      <h2 id="titre-recevoir" class="h3-like">Recevoir le journal</h2>
+      <p>Pour le recevoir par courriel, ou pour proposer une idée, une information ou un article : <a href="mailto:cheylade.journal@gmail.com">cheylade.journal@<wbr>gmail.com</a>.</p>
+      <p>Prochaine parution : le 6 janvier 2027.</p>
+    </section>
+  </aside>
+</div>
+
+<section class="bloc" id="articles" aria-labelledby="titre-articles">
+  <h2 id="titre-articles" class="titre-decore">Les articles du n°2</h2>
+  <div class="grille-cartes">
+    {%- for p in site.posts %}
+    {% include carte-article.html article=p %}
+    {%- endfor %}
+  </div>
+  <p class="note bloc-suite">Les bulletins municipaux précédents (2020 à 2024) sont consultables sur le <a href="{{ site.site_officiel_actuel }}/bulletin-municipal-cheylade_fr.html">site actuel de la commune</a>.</p>
+</section>
