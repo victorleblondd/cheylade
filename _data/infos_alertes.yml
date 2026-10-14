@@ -1,0 +1,169 @@
+# =====================================================================
+#  INFOS & ALERTES DE LA MAIRIE
+#  La publication la plus récente se place TOUT EN HAUT de la liste.
+#
+#  Ajouter un avis en PDF :
+#    1. Déposer le fichier PDF dans le dossier  documents/infos-alertes/
+#       Nom conseillé : AAAA-MM-JJ-sujet-court.pdf  (sans accents ni espaces)
+#       (ou ajouter son adresse dans outils/fichiers-a-recuperer.txt : voir README.md)
+#    2. Copier le modèle ci-dessous tout en haut de la liste, puis le remplir.
+#
+#  - date: "AAAA-MM-JJ"               date de l'avis
+#    heure: "HH:MM"                   facultatif
+#    type: alerte                     alerte (rouge) ou info (bleu)
+#    theme: eau                       eau, travaux, vie (services et vie locale)
+#    titre: "Titre de l'avis"
+#    resume: "Une ou deux phrases qui disent l'essentiel."
+#    pdf: "AAAA-MM-JJ-sujet-court.pdf"    nom exact du fichier déposé
+#    bandeau_jusquau: "AAAA-MM-JJ"    facultatif : bandeau rouge sur l'accueil
+#                                     jusqu'à cette date incluse (alertes)
+#    lien: "/bulletin-municipal/"     facultatif : page du site à ouvrir
+#    lien_texte: "Texte du lien"      (avec « lien »)
+#
+#  Champ facultatif « texte » : le texte complet de l'avis (version lisible
+#  sans ouvrir le PDF). Les avis sans PDF affichent ce texte.
+# =====================================================================
+
+- date: "2026-10-08"
+  type: info
+  theme: vie
+  titre: "Point de collecte : les abords des containers ne sont pas des dépotoirs"
+  resume: "Les déchets doivent être déposés dans les containers prévus à cet effet, et non à côté. Quand les containers sont pleins, revenez plus tard ou utilisez les dispositifs adaptés : les encombrants n'ont pas leur place au point de collecte."
+  pdf: "2026-10-08-abords-des-containers.pdf"
+  texte: |
+    <p>Nous constatons actuellement une situation particulièrement dégradée autour du point de collecte de la commune.</p>
+    <p>Les déchets doivent <strong>impérativement être déposés dans les containers</strong> prévus à cet effet, et non à côté. Les cartons, sacs, encombrants et autres déchets laissés au sol donnent une image déplorable de notre commune et posent un problème de propreté et d'hygiène.</p>
+    <p>Notre point de collecte n'est pas une décharge ! Lorsque les containers sont pleins, merci de ne pas déposer vos déchets à côté : revenez ultérieurement ou utilisez les dispositifs adaptés aux déchets concernés. Les encombrants ne doivent pas être déposés au point de collecte.</p>
+    <p>Nous appelons chacun à faire preuve de civisme et à respecter les lieux et le travail des agents qui en assurent l'entretien. Si cette situation devait perdurer, la commune n'exclut pas la mise en place de caméras de surveillance afin d'identifier les dépôts sauvages et de faire respecter les règles.</p>
+    <p>La propreté de notre commune est l'affaire de tous. Merci à chacun de contribuer à la préserver.</p>
+
+- date: "2026-10-05"
+  type: info
+  theme: eau
+  titre: "Relève des compteurs d'eau : rapportez votre carton en mairie"
+  resume: "Les habitants qui ne l'ont pas encore fait sont priés de rapporter au plus vite en mairie leur carton de relève du compteur d'eau, afin que les relevés soient mis à jour dans les meilleurs délais."
+  pdf: "2026-10-05-releve-des-compteurs-d-eau.pdf"
+  texte: |
+    <p>Petit rappel aux habitants de la commune qui ne l'auraient pas encore fait : merci de <strong>rapporter au plus vite votre carton de relève du compteur d'eau en mairie</strong>.</p>
+    <p>Votre retour est important afin de permettre la mise à jour des relevés dans les meilleurs délais. Merci à tous pour votre réactivité !</p>
+
+- date: "2026-10-05"
+  type: info
+  theme: travaux
+  titre: "Élagage aux abords des lignes électriques à partir du 8 octobre"
+  resume: "Enedis fait réaliser des travaux d'élagage aux abords des lignes à haute tension (HTA 20 kV) de la commune à compter du 8 octobre 2026, pour l'entretien et la sécurisation du réseau électrique."
+  texte: |
+    <p><strong>Avis de passage : entretien des lignes aériennes.</strong> Enedis informe que des travaux d'élagage aux abords des lignes HTA 20 kV seront réalisés sur la commune <strong>à compter du 8 octobre 2026</strong>.</p>
+    <p>Ces travaux sont nécessaires à l'entretien et à la sécurisation du réseau électrique.</p>
+    <p>Pour toute information sur les travaux, contactez le responsable du chantier au <a href="tel:+33648662289">06 48 66 22 89</a>. Merci de votre compréhension.</p>
+
+- date: "2026-10-02"
+  type: info
+  theme: vie
+  titre: "Cheylade & vous n°2 : le journal communal d'octobre"
+  resume: "Le deuxième numéro du journal communal est paru : retour sur les animations de l'été, les projets qui avancent dans la commune et les rendez-vous à venir."
+  lien: "/bulletin-municipal/"
+  lien_texte: "Lire les articles du n°2"
+  texte: |
+    <p>Le journal communal de Cheylade revient ! Au programme de ce deuxième numéro de <em>Cheylade &amp; vous</em> :</p>
+    <ul>
+      <li>retour sur les animations et les temps forts de l'été ;</li>
+      <li>les projets qui avancent dans notre commune ;</li>
+      <li>les événements et les rendez-vous à venir ;</li>
+      <li>et toujours des informations pour faire vivre notre village et renforcer les liens entre nous.</li>
+    </ul>
+    <p>Merci à toutes celles et ceux qui contribuent à faire vivre ce journal, et à vous, lecteurs, pour votre intérêt et vos retours. N'hésitez pas à faire part de vos idées, suggestions ou informations à partager : <a href="mailto:cheylade.journal@gmail.com">cheylade.journal@gmail.com</a>.</p>
+
+- date: "2026-09-21"
+  type: info
+  theme: travaux
+  titre: "Travaux d'assainissement : environ 30 semaines de chantier"
+  resume: "Présentés lors de la réunion publique du 17 septembre, les travaux d'assainissement se dérouleront en trois secteurs pendant environ 30 semaines, avec une fin de chantier prévue à l'hiver 2027."
+  lien: "/bulletin-municipal/travaux-d-assainissement-et-chantiers-en-cours/"
+  lien_texte: "Les travaux en cours dans la commune"
+  texte: |
+    <p>À la suite de la réunion publique du 17 septembre, en présence du maître d'œuvre, le cabinet Impact Conseil, et de l'entreprise Lacombe, chargée des travaux, les travaux d'assainissement débuteront <strong>début octobre 2026</strong> et s'étaleront sur <strong>environ 30 semaines</strong>, avec une fin de chantier prévue à l'hiver 2027.</p>
+    <p>Le chantier se déroulera en plusieurs secteurs :</p>
+    <ul>
+      <li><strong>secteur 1</strong> (prés en bas de Cheylade) : environ 7 semaines de travaux et 1 semaine d'observation ;</li>
+      <li><strong>secteur 2</strong> (le Peuch, route de la Biaugue, rue de Valrhue) : environ 10 semaines de travaux et 2 semaines d'observation ;</li>
+      <li><strong>secteur 3</strong> (route du Limon, chemin du Massou) : environ 9 semaines de travaux et 1 semaine d'observation.</li>
+    </ul>
+    <p>Ces différentes étapes tiennent notamment compte des contraintes liées aux récoltes, aux conditions hivernales et à l'activité agricole.</p>
+    <p>Des fermetures ou modifications de circulation pourront être nécessaires selon l'avancement du chantier. Les habitants seront informés des différentes phases et des éventuelles perturbations au fur et à mesure. Les particuliers concernés par le raccordement de leur habitation seront prochainement contactés afin de préciser les modalités à prévoir.</p>
+    <p>Merci à tous pour votre compréhension et votre patience pendant cette période de travaux.</p>
+
+- date: "2026-08-22"
+  type: info
+  theme: vie
+  titre: "Chenilles processionnaires : les bons gestes"
+  resume: "Rappel des principales mesures de l'arrêté préfectoral : évitez tout contact avec les chenilles et leurs nids, et signalez leur présence sur la plateforme dédiée."
+  pdf: "2026-08-22-chenilles-processionnaires.pdf"
+  texte: |
+    <p>Rappel des principales mesures de l'arrêté préfectoral. Afin de protéger la santé de tous, chacun est invité à <strong>signaler la présence de chenilles processionnaires</strong> sur la plateforme dédiée : <a href="https://signalement-chenilles-processionnaires.atlasante.fr">signalement-chenilles-processionnaires.atlasante.fr</a>.</p>
+    <p>Les poils des chenilles peuvent provoquer des réactions importantes chez l'homme et les animaux. Restons vigilants et évitons tout contact avec les nids ou les chenilles.</p>
+    <ul>
+      <li><strong>En cas de piqûre ou de contact</strong> : éloignez-vous de la zone à risque, prenez une douche et changez de vêtements, sans frotter la peau ni les yeux ; rincez abondamment à l'eau claire les yeux ou la bouche en cas de projection ; en cas de réaction importante, consultez rapidement un professionnel de santé ou appelez le 15.</li>
+      <li><strong>Au quotidien</strong> : n'approchez pas des pins ou des arbres infestés, tenez vos chiens en laisse, portez des manches longues, un pantalon et des lunettes lors des activités en pleine nature, et lavez vos vêtements à 60 °C au moins après une promenade en zone à risque.</li>
+    </ul>
+    <p>Ne touchez jamais les chenilles ni les nids, même s'ils sont au sol.</p>
+
+- date: "2026-07-28"
+  type: info
+  theme: vie
+  titre: "Fin des paiements par chèque pour les factures communales"
+  resume: "Les chèques ne seront bientôt plus acceptés pour régler les factures communales (cantine, eau, loyers, fermages, estives, camping…). Privilégiez le prélèvement automatique, le paiement en ligne PayFiP ou le paiement chez un buraliste partenaire."
+  pdf: "2026-07-28-fin-des-paiements-par-cheque.pdf"
+  texte: |
+    <p>Dans le cadre de la modernisation des moyens de paiement et afin de renforcer la sécurité des transactions, <strong>les paiements par chèque ne seront bientôt plus acceptés</strong> pour le règlement des factures communales (cantine, eau, loyers, fermages, estives, camping, etc.).</p>
+    <p>Nous vous invitons à privilégier les solutions de paiement suivantes :</p>
+    <ul>
+      <li>le <strong>prélèvement automatique</strong>, sur demande ;</li>
+      <li>le <strong>paiement en ligne</strong> sur <a href="https://www.payfip.gouv.fr/">PayFiP</a> ;</li>
+      <li>le <strong>paiement de proximité</strong> chez les buralistes partenaires agréés, en espèces jusqu'à 300 € ou par carte bancaire.</li>
+    </ul>
+    <p>Ces moyens de paiement sont plus simples, plus rapides et plus sécurisés. Pour toute question, ou pour être accompagné dans vos démarches, contactez la mairie.</p>
+
+- date: "2026-07-01"
+  type: info
+  theme: vie
+  titre: "De nouveaux jeux pour enfants au City Park"
+  resume: "Les nouveaux jeux pour enfants du City Park sont installés et ouverts au public : un espace pour s'amuser, se dépenser et partager de bons moments en famille ou entre amis."
+  texte: |
+    <p>Les nouveaux jeux pour enfants du City Park sont désormais installés et ouverts au public !</p>
+    <p>Les enfants peuvent dès à présent profiter de cet espace de loisirs pensé pour s'amuser, se dépenser et partager de bons moments en famille ou entre amis.</p>
+    <p>Rendez-vous au City Park… et bel été à toutes et à tous !</p>
+
+- date: "2026-06-28"
+  type: info
+  theme: vie
+  titre: "Baignade interdite au lac des Cascades"
+  resume: "La baignade est strictement interdite au lac des Cascades : elle n'y est pas surveillée et la qualité de l'eau n'est pas conforme à la baignade."
+  pdf: "2026-06-28-baignade-interdite-au-lac-des-cascades.pdf"
+  texte: |
+    <p><strong>Rappel important.</strong> Avec les fortes chaleurs, le lac des Cascades peut donner envie de se rafraîchir. Nous vous rappelons cependant que <strong>la baignade y est strictement interdite</strong> :</p>
+    <ul>
+      <li>la baignade n'est pas surveillée ;</li>
+      <li>la qualité de l'eau n'est pas conforme à la baignade.</li>
+    </ul>
+    <p>Se baigner dans le lac peut donc présenter un risque pour votre sécurité et votre santé. Merci de respecter cette interdiction et de veiller à la sécurité de tous, notamment des enfants.</p>
+
+- date: "2026-06-27"
+  type: info
+  theme: vie
+  titre: "Stationnement interdit devant l'église"
+  resume: "Il est interdit de stationner devant l'église : ce stationnement gêne l'accès au site et nuit à la mise en valeur du patrimoine. Merci d'utiliser les places prévues à proximité."
+  pdf: "2026-06-27-stationnement-interdit-devant-l-eglise.pdf"
+  texte: |
+    <p>Nous vous rappelons qu'il est <strong>interdit de stationner devant l'église</strong>. Ce stationnement gêne non seulement l'accès au site, mais nuit également à la mise en valeur de ce patrimoine que nous avons la chance de pouvoir préserver.</p>
+    <p>Nous comptons sur le civisme de chacun pour respecter cette règle et privilégier les emplacements de stationnement prévus à proximité. Préserver notre patrimoine, c'est l'affaire de tous.</p>
+
+- date: "2026-06-26"
+  type: info
+  theme: vie
+  titre: "Infos pratiques de la mairie"
+  resume: "La mairie se trouve 2 rue de la Lettre. Elle est ouverte du lundi au jeudi de 8 h à 14 h et le vendredi de 8 h à 12 h : 04 71 78 90 67, mairie.cheylade@wanadoo.fr."
+  texte: |
+    <p><strong>Adresse de la mairie</strong> : 2 rue de la Lettre, 15400 Cheylade.</p>
+    <p><strong>Horaires</strong> : du lundi au jeudi de 8 h à 14 h, le vendredi de 8 h à 12 h.</p>
+    <p><strong>Contacter la mairie</strong> : <a href="tel:+33471789067">04 71 78 90 67</a> · <a href="mailto:mairie.cheylade@wanadoo.fr">mairie.cheylade@wanadoo.fr</a>.</p>
